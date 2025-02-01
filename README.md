@@ -2,6 +2,8 @@
 
 This Node.js script periodically checks for new or updated tasks in an Asana project and sends notifications to a Telegram chat.
 
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/flexua/asana-telegram-notifier-bot?tab=MIT-1-ov-file)
+
 ## 🚀 Features
 
 - Detects new tasks in Asana and sends a message to Telegram.
@@ -27,9 +29,9 @@ cd asana-telegram-bot
 npm install
 ```
 
-3️⃣ Create a .env file
+3️⃣ Create a **.env** file
 
-Create a .env file in the root directory and fill in the required values:
+Create a **.env file** in the root directory and fill in the required values:
 
 ```
 TELEGRAM_BOT_TOKEN=your_telegram_bot_token
@@ -48,13 +50,13 @@ node index.js
 ```
 ## ⚙️ How It Works
 
-The bot fetches all tasks from the specified Asana project every POLLING_INTERVAL seconds.
+The bot fetches all tasks from the specified Asana project every **POLLING_INTERVAL** seconds.
 
 If a new task is detected, it sends a message to the Telegram chat.
 
-If an existing task is updated (name, description, assignee, or due date), the corresponding Telegram message is edited.
+If an existing task is updated (**name, description, assignee, or due date**), the corresponding Telegram message is edited.
 
-All sent messages are stored in a file (messages.json) to track changes.
+All sent messages are stored in a file (**messages.json**) to track changes.
 
 ## 📜 License
 
